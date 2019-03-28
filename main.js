@@ -7,8 +7,31 @@ const teams = [
         BKN: 'Brooklyn Nets',
         CHA: 'Charlotte Hornets',
         CHI: 'Chicago Bulls',
-        
+        CLE: 'Cleeland Cavaliers',
+        DAL: 'Dallas Mavericks',
+        DEN: 'Denver Nuggets',
+        DET: 'Detroit Pistons',
         GSW: 'Golden State Warriors',
+        HOU: 'Houston Rockets',
+        IND: 'Indiana Pacers',
+        LAC: 'LA Clippers',
+        LAL: 'Los Angeles Lakers',
+        MEM: 'Memphis Grizzlies',
+        MIA: 'Miami Heat',
+        MIL: 'Milwaukee Bucks',
+        MIN: 'Minnesota Timberwolves',
+        NOP: 'New Orleans Pelicans',
+        NYK: 'New York Knicks',
+        OKC: 'Oklahoma City Thunders',
+        ORL: 'Orlando Magic',
+        PHI: 'Philadelphia 76ers',
+        PHO: 'Phoenix Suns',
+        POR: 'Portland Trail Blazers',
+        SAC: 'Sacramento Kings',
+        SAS: 'San Antonio Spurs',
+        TOR: 'Toronto Raptors',
+        UTA: 'Utah Jazz',
+        WAS: 'Washington Wizards'
 
     }
 ]
@@ -144,14 +167,34 @@ function searchLoop(userInput, userSelection){
                 }
             }
         }
+        arrayWithInput = searchTeamArray(UILower);
+        
+    } else if (userSelection === 'previousTeams'){
+        arrayWithInput = searchTeamArray(UILower);
+
     } else {
         for (let i = 0; i < data.length; i++){
             if (data[i][userSelection].toLowerCase().includes(UILower)){
                 arrayWithInput.push(data[i]);
             }
         }
+
     }
 
     displayItems(arrayWithInput);
 
+}
+
+function searchTeamArray(userInput){
+    let arrayWithInput = [];
+    for (let i = 0; i < data.length; i++){
+        let subArray = data[i].previousTeams;
+        for (let j = 0; j < subArray.length; j++){
+            console.log(subArray[j].toLowerCase());
+            if(subArray[j].toLowerCase().includes(userInput)){
+                arrayWithInput.push(data[i]);
+            }
+        }
+    }
+    return arrayWithInput;
 }
