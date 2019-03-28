@@ -5,7 +5,9 @@ const data = [
         position: 'Forward',
         height: 81,
         weight: 224,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2017-19'
+        ]
     },
     
     {
@@ -14,7 +16,14 @@ const data = [
         position: 'Center',
         height: 84,
         weight: 260,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2018-19',
+            'LAL 2017-18',
+            'CLE 2016-17',
+            'DAL 2016-17',
+            'GSW 2012-16',
+            'MIL 2005-12'
+        ]
     },
 
     {
@@ -23,7 +32,11 @@ const data = [
         position: 'Guard',
         height: 74,
         weight: 179,
-        team: 'Golden State Warriors'
+        previousTeams: [          
+            'GSW 2017-19',
+            'NOP 2016-17',
+            'DAL 2016-17'
+        ]
     },
     
     {
@@ -32,7 +45,11 @@ const data = [
         position: 'Center',
         height: 83,
         weight: 270,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2018-19',
+            'NOP 2016-18',
+            'SAC 2010-17'
+        ]
     },
 
     {
@@ -41,7 +58,9 @@ const data = [
         position: 'Guard',
         height: 75,
         weight: 190,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2009-19'
+        ]
     },
 
     {
@@ -50,7 +69,9 @@ const data = [
         position: 'Forward',
         height: 79,
         weight: 249,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2018-19'
+        ]
     },
 
     {
@@ -59,7 +80,10 @@ const data = [
         position: 'Forward',
         height: 81,
         weight: 240,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2016-19',
+            'OKC 2007-16'
+        ]
     },
 
     {
@@ -68,7 +92,9 @@ const data = [
         position: 'Guard',
         height: 78,
         weight: 210,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2018-19'
+        ]
     },
 
     {
@@ -77,7 +103,9 @@ const data = [
         position: 'Forward',
         height: 79,
         weight: 230,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2012-19'
+        ]
     },
 
     {
@@ -86,7 +114,11 @@ const data = [
         position: 'Guard',
         height: 78,
         weight: 215,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2013-19',
+            'DEN 2012-13',
+            'PHI 2004-12'
+        ]
     },
     
     {
@@ -95,7 +127,12 @@ const data = [
         position: 'Forward',
         height: 82,
         weight: 231,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2018-19',
+            'UTA 2017-18',
+            'BOS 2014-17',
+            'DET 2009-15'
+        ]
     },
 
     {
@@ -104,7 +141,9 @@ const data = [
         position: 'Center',
         height: 84,
         weight: 245,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2016-19'
+        ]
     },
 
     {
@@ -113,7 +152,10 @@ const data = [
         position: 'Guard',
         height: 78,
         weight: 210,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2018-19',
+            'ATL 2017-18'
+        ]
     },
 
     {
@@ -122,7 +164,18 @@ const data = [
         position: 'Guard',
         height: 79,
         weight: 192,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2014-19',
+            'BKN 2013-14',
+            'CLE 2012-13',
+            'WAS 2012-13',
+            'MIL 2011-12',         
+            'CHA 2010-11',
+            'WAS 2009-10',
+            'OKC 2008-10',
+            'MIA 2008-09',
+            'LAC 2004-07'
+        ]
     },
 
     {
@@ -131,7 +184,9 @@ const data = [
         position: 'Center',
         height: 81,
         weight: 220,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2015-19'
+        ]
     },
 
     {
@@ -140,7 +195,10 @@ const data = [
         position: 'Forward',
         height: 78,
         weight: 215,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2018-19',
+            'TOR 2017-18'
+        ]
     },
 
     {
@@ -149,6 +207,8 @@ const data = [
         position: 'Guard',
         height: 79,
         weight: 215,
-        team: 'Golden State Warriors'
+        previousTeams: [
+            'GSW 2011-19'
+        ]
     },
 ]
