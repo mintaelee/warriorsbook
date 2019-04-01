@@ -212,3 +212,155 @@ const data = [
         ]
     },
 ]
+
+const teams = [
+    {
+        name: 'Atlanta Hawks',
+        nickname: 'ATL' 
+    },
+
+    {
+        name: 'Boston Celtics',
+        nickname: 'BOS'
+    },
+
+    {
+        name: 'Brooklyn Nets',
+        nickname: 'BKN'
+    },
+
+    {
+        name: 'Charlotte Hornets',
+        nickname: 'CHA'
+    },
+
+    {
+        name: 'Chicago Bulls',
+        nickname: 'CHI'
+    },
+
+    {
+        name: 'Cleeland Cavaliers',
+        nickname: 'CLE'
+    },
+    
+    {
+        name: 'Dallas Mavericks',
+        nickname: 'DAL'
+    },
+
+    {
+        name: 'Denver Nuggets',
+        nickname: 'DEN'
+    },
+
+    {
+        name: 'Detroit Pistons',
+        nickname: 'DET'
+    },
+
+    {
+        name: 'Golden State Warriors',
+        nickname: 'GSW'
+    },
+
+    {
+        name: 'Houston Rockets',
+        nickname: 'HOU'
+    },
+
+    {
+        name: 'Indiana Pacers',
+        nickname: 'IND'
+    },
+
+    {
+        name: 'LA Clippers',
+        nickname: 'LAC'
+    },
+
+    {
+        name: 'Los Angeles Lakers',
+        nickname: 'LAL'
+    },
+
+    {
+        name: 'Memphis Grizzlies',
+        nickname: 'MEM'
+    },
+
+    {
+        name: 'Miami Heat',
+        nickname: 'MIA'
+    },
+
+    {
+        name: 'Milwaukee Bucks',
+        nickname: 'MIL'
+    },
+
+    {
+        name: 'Minnesota Timberwolves',
+        nickname: 'MIN'
+    },
+
+    {
+        name: 'New Orleans Pelicans',
+        nickname: 'NOP'
+    },
+
+    {
+        name: 'New York Knicks',
+        nickname: 'NYK'
+    },
+
+    {
+        name: 'Oklahoma City Thunders',
+        nickname: 'OKC'
+    },
+
+    {
+        name: 'Orlando Magic',
+        nickname: 'ORL'
+    },
+
+    {
+        name: 'Philadelphia 76ers',
+        nickname: 'PHI'
+    },
+    
+    {
+        name: 'Phoenix Suns',
+        nickname: 'PHO'
+    },
+
+    {
+        name: 'Portland Trail Blazers',
+        nickname: 'POR'
+    },
+
+    {
+        name: 'Sacramento Kings',
+        nickname: 'SAC'
+    },
+
+    {
+        name: 'San Antonio Spurs',
+        nickname: 'SAS'
+    },
+
+    {
+        name: 'Toronto Raptors',
+        nickname: 'TOR'
+    },
+
+    {
+        name: 'Utah Jazz',
+        nickname: 'UTA'
+    },
+
+    {
+        name: 'Washington Wizards',
+        nickname: 'WAS'
+    },
+]

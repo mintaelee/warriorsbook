@@ -1,41 +1,5 @@
 window.onload = init;
 
-const teams = [
-    {
-        ATL: 'Atlanta Hawks',
-        BOS: 'Boston Celtics',
-        BKN: 'Brooklyn Nets',
-        CHA: 'Charlotte Hornets',
-        CHI: 'Chicago Bulls',
-        CLE: 'Cleeland Cavaliers',
-        DAL: 'Dallas Mavericks',
-        DEN: 'Denver Nuggets',
-        DET: 'Detroit Pistons',
-        GSW: 'Golden State Warriors',
-        HOU: 'Houston Rockets',
-        IND: 'Indiana Pacers',
-        LAC: 'LA Clippers',
-        LAL: 'Los Angeles Lakers',
-        MEM: 'Memphis Grizzlies',
-        MIA: 'Miami Heat',
-        MIL: 'Milwaukee Bucks',
-        MIN: 'Minnesota Timberwolves',
-        NOP: 'New Orleans Pelicans',
-        NYK: 'New York Knicks',
-        OKC: 'Oklahoma City Thunders',
-        ORL: 'Orlando Magic',
-        PHI: 'Philadelphia 76ers',
-        PHO: 'Phoenix Suns',
-        POR: 'Portland Trail Blazers',
-        SAC: 'Sacramento Kings',
-        SAS: 'San Antonio Spurs',
-        TOR: 'Toronto Raptors',
-        UTA: 'Utah Jazz',
-        WAS: 'Washington Wizards'
-
-    }
-]
-
 
 function init() {
     document.querySelector('#search')
@@ -46,6 +10,8 @@ function init() {
 
     document.querySelector('#search-input')
         .addEventListener('keyup',searchValue);
+
+    // document.querySelector('#number-select').onchange = numberSearch;
 }
 
 function displayAll(event){
@@ -167,7 +133,9 @@ function searchLoop(userInput, userSelection){
                 }
             }
         }
-        arrayWithInput = searchTeamArray(UILower);
+        if (arrayWithInput.length === 0){
+            arrayWithInput = searchTeamArray(UILower);
+        }
         
     } else if (userSelection === 'previousTeams'){
         arrayWithInput = searchTeamArray(UILower);
@@ -187,14 +155,35 @@ function searchLoop(userInput, userSelection){
 
 function searchTeamArray(userInput){
     let arrayWithInput = [];
+
+    let chosenTeam = '';
+
+    // Check if user input is included in teams data
+    for (let k = 0; k < teams.length; k++) {
+        if(teams[k].name.toLowerCase().includes(userInput)){
+            chosenTeam = teams[k].nickname;
+        }
+    }
+    
     for (let i = 0; i < data.length; i++){
         let subArray = data[i].previousTeams;
+        let found = false;
         for (let j = 0; j < subArray.length; j++){
-            console.log(subArray[j].toLowerCase());
-            if(subArray[j].toLowerCase().includes(userInput)){
-                arrayWithInput.push(data[i]);
+            if(subArray[j].toLowerCase().includes(chosenTeam.toLowerCase())){
+                found = true;
             }
+        }
+        if (found){
+            arrayWithInput.push(data[i]);
         }
     }
     return arrayWithInput;
 }
+
+// function numberSearch(event){
+//     const selected = document.querySelector('#number-select').value;
+
+//     if (selected === 'height'){
+//         console.log(selected);
+//     }
+// }
